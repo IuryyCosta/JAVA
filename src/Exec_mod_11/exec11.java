@@ -1,8 +1,6 @@
 package Exec_mod_11;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 
 public class exec11 {
@@ -35,6 +33,9 @@ public class exec11 {
 
 
             }
+        // Ordena em ordem alfabetica
+            Collections.sort(grupoMasculino);
+            Collections.sort(grupoFeminino);
 
         // Exibir os grupos
 
@@ -46,6 +47,7 @@ public class exec11 {
          System.out.println("*********************");
 
             for(String feminino : grupoFeminino){
+
                 System.out.println(feminino);
             }
 

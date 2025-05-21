@@ -1,3 +1,4 @@
+package src;
 public class Pessoa {
     private String nome;
     private String sexo;

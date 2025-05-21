@@ -1,14 +1,15 @@
-public class Main {
-    public static void main(String[] args) {
-        // Criando um carro do tipo Sedan
-        Carro meuSedan = new Sedan("Civic", 4);
-        
-        Carro meuSuv = new Suv("HR-V", 5);
-        // Exibindo informações do SUV
-        
-        meuSuv.exibirInfo();
 
-        // Exibindo informações do carro
-        meuSedan.exibirInfo();
+
+
+public class Main {
+     public static void main(String[] args) {
+        Class<Produto> clazz = Produto.class;
+
+        if (clazz.isAnnotationPresent(Tabela.class)) {
+            Tabela tabela = clazz.getAnnotation(Tabela.class);
+            System.out.println("Nome da tabela: " + tabela.value());
+        } else {
+            System.out.println("A classe não tem anotação Tabela.");
+        }
     }
 }
